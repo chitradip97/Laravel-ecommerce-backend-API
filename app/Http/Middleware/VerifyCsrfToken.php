@@ -20,6 +20,7 @@ class VerifyCsrfToken extends Middleware
         'http://127.0.0.1:1234/api/products/*',
         'http://127.0.0.1:1234/api/register',
         'http://127.0.0.1:1234/api/orders',
+        'http://127.0.0.1:1234/api/user-register'
         
         
     ];

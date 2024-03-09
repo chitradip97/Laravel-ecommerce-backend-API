@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\userController;
 
 
 Route::get('/customer-view',[adminController::class,'view_customer']);
@@ -22,6 +23,16 @@ Route::post('/register',[adminController::class,'add_register']);
 Route::get('/register',[adminController::class,'view_register']);
 // admin Order list
 Route::get('/orders',[adminController::class,'view_orders']);
+
+
+
+
+
+// User Product search
+Route::get('/products/{id}',[userController::class,'product_search']);
+// user Registration
+Route::post('/user-register',[userController::class,'add_user_register']);
+Route::get('/user-register',[userController::class,'view_user_register']);
 /*`
 |--------------------------------------------------------------------------
 | API Routes
