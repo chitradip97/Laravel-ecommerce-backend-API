@@ -33,6 +33,8 @@ Route::get('/products/{id}',[userController::class,'product_search']);
 // user Registration
 Route::post('/user-register',[userController::class,'add_user_register']);
 Route::get('/user-register',[userController::class,'view_user_register']);
+// user Order
+Route::post('/orders',[userController::class,'add_order']);
 /*`
 |--------------------------------------------------------------------------
 | API Routes
